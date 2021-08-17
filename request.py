@@ -2,7 +2,7 @@ import requests
 
 link = open("link.txt", "r")
 
-url = link.readline()
+url = "https://pptp.cloud/sub/eff3ccea-d40c-4861-92b8-c0e635ea7b86.html"
 r = requests.get(url)
 
 print(url, r.text)
