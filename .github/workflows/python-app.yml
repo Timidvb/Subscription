@@ -16,13 +16,4 @@ jobs:
     - name: Update paper list
       run: |
         python requst.py
-    - name: commit
-      run: |
-        git config --global user.email 844671559@qq.com
-        git config --global user.name Timidvb
-        git add .
-        git commit -m "update" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+
