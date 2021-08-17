@@ -2,7 +2,7 @@ import requests
 
 link = open("link.txt", "r")
 
-link.readline().replace("\n", "")
+url = link.readline().replace('\r','').replace('\n','').replace('\t','')
 r = requests.get(url)
 
 print(url, r.text)
